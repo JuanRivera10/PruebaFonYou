@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "ee9e050c-e368-45fd-b5a3-741877f2f986",
+		"name": "Servicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Guardar nuevo estudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idEstudiante\": 1024598363,\r\n    \"Nombre\": \"Juan\",\r\n    \"Edad\": 23,\r\n    \"Ciudad\": \"Bogota\",\r\n    \"idZonaH\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/services/guardarestudiante",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"services",
+						"guardarestudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar Examen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idExamen\": 1,\r\n    \"Pregunta1\": \"\",\r\n    \"Pregunta2\": \"\",\r\n    \"Pregunta3\": \"\",\r\n    \"Pregunta4\": \"\",\r\n    \"idZonaH\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/services/guardarexamen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"services",
+						"guardarexamen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar respuestas examen",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Respuesta1\": \"\",\r\n    \"Respuesta2\": \"\",\r\n    \"Respuesta3\": \"\",\r\n    \"Respuesta4\": \"\",\r\n    \"idExamen\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/services/guardarrespexamen",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"services",
+						"guardarrespexamen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Guardar respuestas estudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Respuesta1\": \"\",\r\n    \"Respuesta2\": \"\",\r\n    \"Respuesta3\": \"\",\r\n    \"Respuesta4\": \"\",\r\n    \"idEstudiante\":1,\r\n    \"idExamen\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/services/guardarrespexamenest",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"services",
+						"guardarrespexamenest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
